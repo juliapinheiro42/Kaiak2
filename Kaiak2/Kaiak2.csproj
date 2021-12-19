@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\Cliente\**" />
+    <Compile Remove="Views\img\**" />
+    <Compile Remove="Views\Promocao\**" />
+    <Content Remove="Views\Cliente\**" />
+    <Content Remove="Views\img\**" />
+    <Content Remove="Views\Promocao\**" />
+    <EmbeddedResource Remove="Views\Cliente\**" />
+    <EmbeddedResource Remove="Views\img\**" />
+    <EmbeddedResource Remove="Views\Promocao\**" />
+    <None Remove="Views\Cliente\**" />
+    <None Remove="Views\img\**" />
+    <None Remove="Views\Promocao\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\ClienteController.cs" />
+    <Compile Remove="Controllers\PromocaoController.cs" />
+    <Compile Remove="Models\Cliente.cs" />
+    <Compile Remove="Models\ClienteContext.cs" />
+    <Compile Remove="Models\Promocao.cs" />
+    <Compile Remove="Models\PromocaoContext.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\Imagem\jerry-zhang-BvuZn3FhEdU-unsplash.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="bootstrap" Version="5.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.12">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+  </ItemGroup>
+
+</Project>

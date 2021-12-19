@@ -1,0 +1,74 @@
+﻿@model Kaiak2.Models.Clientes
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<body class="formulario">
+    <div class="container h-100"  style="margin-top:90px;">
+        <div class="row text-center align-items-center justify-content-center">
+            <div class="col-sm-5 col-lg-5 col-xl-5 white-bg shadow-rounded-lg px-5 py-4">
+                <h3 style="color:#ff7800; font-weight:bold;" class="title lead mb-5">
+                    Cadastre-se e compre agora mesmo!
+                </h3>
+                <hr />
+                <div class="row  d-flex flex-column align-items-center">
+                    <div class="col-md-7">
+                        <form asp-action="Create" class="form-row mb-4 mb-5 p-4 text-center ">
+                            <div asp-validation-summary="ModelOnly" class="text-danger col-sm-12 col-md-6 mb-5"></div>
+                            <div class="form-group text-center">
+                                <label asp-for="Nome" class="control-label text-muted mb-0 mr-2"></label>
+                                <input asp-for="Nome"class="form-control bg-transparent shadow-none border-0 pl-0 input-fiel text-center" />
+                                <span asp-validation-for="Nome" class="text-danger d-block border-bottom"></span>
+                            </div>
+                            <div class="form-group text-center">
+                                <label asp-for="Cpf" class="control-label text-muted mb-0 mr-2"></label>
+                                <input asp-for="Cpf" class="form-control form-control bg-transparent shadow-none border-0 pl-0 input-field" />
+                                <span asp-validation-for="Cpf" class="text-danger d-block border-bottom"></span>
+                            </div>
+                            <div class="form-group text-center">
+                                <label asp-for="Nascimento" class="control-label text-muted mb-0 mr-2"></label>
+                                <input type="date" asp-for="Nascimento" id="nasc" rows="3" class="form-control bg-transparent shadow-none border-0 pl-0 input-field" />
+                                <span asp-validation-for="Nascimento" class="text-danger d-block border-bottom"></span>
+                            </div>
+                            <div class="form-group text-center">
+                                <label asp-for="Telefone" class="control-label text-muted mb-0 mr-2"></label>
+                                <input type="tel" asp-for="Telefone" id="telefone" rows="3" class="form-control bg-transparent shadow-none border-0 pl-0 input-field" />
+                                <span asp-validation-for="Telefone" class="text-danger d-block border-bottom"></span>
+                            </div>
+                            <div class="form-group text-center">
+                                <label asp-for="Email" class="control-label text-muted mb-0 mr-2"></label>
+                                <input type="email" asp-for="Email" id="email" rows="3" class="form-control bg-transparent shadow-none border-0 pl-0 input-field" />
+                                <span asp-validation-for="Email" class="text-danger d-block border-bottom"></span>
+                            </div>
+                            <div class="form-group text-center">
+                                <label asp-for="Estado" class="control-label text-muted mb-0 mr-2"></label>
+                                <input asp-for="Estado" id="estado" rows="3" class="form-control bg-transparent shadow-none border-0 pl-0 input-field" />
+                                <span asp-validation-for="Estado" class="text-danger d-block border-bottom"></span>
+                            </div>
+                            <div class="form-group text-center">
+                                <label asp-for="Cidade" class="control-label text-muted mb-0 mr-2"></label>
+                                <input asp-for="Cidade" id="telefone" rows="3" class="form-control bg-transparent shadow-none border-0 pl-0 input-field" />
+                                <span asp-validation-for="Cidade" class="text-danger d-block border-bottom"></span>
+                            </div>
+                            <div class="form-group d-flex flex-column justify-content-center align-items-center m-5">
+                                <input type="submit" value="Comprar" style=" background: #ff7800; color:#ffffff" onclick="funcao1()" class="btn  btn-send" />
+                            </div>
+
+                        </form>
+                        <p>
+                            Dúvidas?<a asp-controller="Contatos" asp-action="Create">Fale conosco</a>
+
+                        </p>
+                        <a class="btn btn-send" style=" background:#ff7800; color:#ffffff" asp-controller="Clientes" asp-action="Index">Clientes</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

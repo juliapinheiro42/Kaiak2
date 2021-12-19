@@ -1,0 +1,100 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<head>
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+
+<div class="fundo h-100 w-100">
+    <div class="d-flex justify-content-center flex-column text-center">
+        <h1 style="font-size:4em; color:#ffffff">Viaje com a gente!</h1>
+        <h4 class="text-light">Conheça nossas ofertas!</h4>
+        <div class="justify-content-center align-content-center">
+            <a asp-action="Promocoes" asp-controller="Home" class="btn btn-warning btn-send btn-lg text-light w-10 h-10">Clique aqui</a>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <section id="sobre">
+            <div class="row d-flex justify-content-around mt-4 pt-4">
+                <div class="col-sx-12 col-sm-6 col-md-3 text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                        <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" />
+                    </svg>
+                    <h5>Hotéis</h5>
+                    <span>Mais de mil hotéis pelo Brasil e pelo mundo. Só escolher e curtir!</span>
+                </div>
+                <div class="col-sx-12 col-sm-6 col-md-3 text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
+                        <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+                    </svg>
+                    <h5 class="">Cancele online</h5>
+                    <span class="">Cancelamento mais rápido e fácil. Cancele online quando quiser!</span>
+                </div>
+                <div class="col-sx-12 col-sm-6 col-md-3 text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-phone-vibrate-fill" viewBox="0 0 16 16">
+                        <path d="M4 4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4zm5 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0zM1.807 4.734a.5.5 0 1 0-.884-.468A7.967 7.967 0 0 0 0 8c0 1.347.334 2.618.923 3.734a.5.5 0 1 0 .884-.468A6.967 6.967 0 0 1 1 8c0-1.18.292-2.292.807-3.266zm13.27-.468a.5.5 0 0 0-.884.468C14.708 5.708 15 6.819 15 8c0 1.18-.292 2.292-.807 3.266a.5.5 0 0 0 .884.468A7.967 7.967 0 0 0 16 8a7.967 7.967 0 0 0-.923-3.734zM3.34 6.182a.5.5 0 1 0-.93-.364A5.986 5.986 0 0 0 2 8c0 .769.145 1.505.41 2.182a.5.5 0 1 0 .93-.364A4.986 4.986 0 0 1 3 8c0-.642.12-1.255.34-1.818zm10.25-.364a.5.5 0 0 0-.93.364c.22.563.34 1.176.34 1.818 0 .642-.12 1.255-.34 1.818a.5.5 0 0 0 .93.364C13.856 9.505 14 8.769 14 8c0-.769-.145-1.505-.41-2.182z" />
+                    </svg>
+                    <h4>Atendimento rápido</h4>
+                    <span> Imprevistos? Acontece... Contate-nos a qualquer momento.</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="text-center mt-5 d-none d-md-block">
+        <div class="container1">
+            <input list="data" name="local de embarque" id="locaem" placeholder="local de embarque" />
+            <datalist id="data">
+                <option value="Aeroporto Galeão - RJ " />
+                <option value="Aeroporto de Congonhas - SP" />
+            </datalist>
+            <input list="destino" name="local de destino" id="locade" placeholder="local de destino" />
+            <datalist id="destino">
+                <option value="Flórida - EUA" />
+                <option value="Porto Seguro - BA" />
+                <option value="Balneário Camboriú - SC" />
+                <option value="Bonito - MS" />
+            </datalist>
+            <input type="date" placeholder="data da viagem" />
+            <input type="date" />
+            <a class="btn btn-warning btn-send" asp-controller="Clientes" asp-action="Create"><img src="/Imagem/pesquisa.png"></a>
+        </div>
+    </section>
+    <section style="top:200px; box-shadow:rgba(0,0,0,0.6) 2px " class="cards">
+        <div class=" d-flex justify-content-between align-items-center m-3">
+            <div class="card justify-content-center p-lg-2 p-5 pl-1" id="card" style="width: 18rem;">
+                <div class="img">
+                    <img src="/Imagem/guillermo-gr-mvabCiq4LBY-unsplash.jpg" class="card-img-top w-100 h-100" alt="Disney World">
+                </div>
+                <div class="card-body mb-3 text-center" >
+                    <h5 class="card-title">Disney World - Flórida</h5>
+                    <p class="card-text">7 dias + ingresso </Br> R$4.500,00</p>
+                    <a asp-controller="Clientes" asp-action="Create" class="btn btn-warning btn-send">Comprar</a>
+                </div>
+            </div>
+            <div class="card justify-content-center p-2 d-md-block d-none" style="width: 18rem;">
+                <div class="img">
+                    <img src="~/Imagem/photo-1514282401047-d79a71a590e8.jfif" class="card-img-top w-100 h-100" alt="Maldivas" />
+                </div>
+                <div class="card-body mb-3 text-center">
+                    <h5 class="card-title">Maldivas</h5>
+                    <p class="card-text">10 dias </br>R$10.000,00</p>
+                    <a asp-controller="Clientes" asp-action="Create" class="btn btn-warning btn-send">Comprar</a>
+                </div>
+            </div>
+            <div class="card justify-content-center p-2 d-lg-block d-none" style="width: 18rem;">
+                <div class="img">
+                    <img src="~/Imagem/alexander-schimmeck-dTPXN8fAKtY-unsplash.jpg" class="card-img-top w-100 h-100" alt="Foz do Iguaçu">
+                </div>
+                <div class="card-body mb-3 text-center">
+                    <h5 class="card-title">Foz do Iguaçu</h5>
+                    <p class="card-text">7 dias </br> R$799,00 </p>
+                    <a asp-controller="Clientes" asp-action="Create" class="btn btn-warning btn-send">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="mt-1">
+   <br/>
+  </div>
+</div>

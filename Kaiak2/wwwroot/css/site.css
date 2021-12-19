@@ -1,0 +1,503 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin-bottom: 30px;
+    border:none;
+}
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+ .fundo{
+    background-image: url('../Imagem/ocean-gf335b2385_1920.jpg'); 
+    height: 100vh;
+    width:100vw;
+    background-size:cover;
+}
+
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #a62f03;
+    text-decoration: none;
+    transition: all .2s;
+}
+    a:hover {
+        color: #a62f32;
+    }
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+
+.container1 {
+    background-color: rgba(255,255, 255,0.600) !important;
+    box-shadow: rgba(0,0,0,0.6) 10px inset;
+    backdrop-filter: blur(15px) !important;
+    -webkit-backdrop-filter: blur(15px) !important;
+    border-radius: 0px 5px 5px 5px !important;
+    padding:10px 0px 10px 0px !important;
+}
+.img {
+    width:260px;
+    height:250px;
+}
+/*Destino*/
+.card1{
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
+    background:white;
+    display: flex;
+    border-radius:20px;
+    justify-content:center;
+    position: relative;
+    transition: all .4s;
+}
+.card1 img {
+    width:300px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+    cursor: pointer;
+    z-index: 10;
+    transition: all .4s;
+}
+.card1:hover img {
+    margin-top: -30px;
+}
+.card1:hover {
+    width:310px;
+    height:360px;
+   
+}
+.card1:before {
+    content:'\ Destinos incríveis esperam por você. Clique para saber mais';
+    letter-spacing: 0.2em;
+    position: absolute;
+    bottom: 8px;
+    left: 30px;
+    color: #ff7800;
+    font-size:16px;
+    font-weight:bolder;
+}
+.card2 {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
+    background: white;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    position: relative;
+    transition: all .4s;
+}
+
+    .card2 img {
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+        cursor: pointer;
+        z-index: 10;
+        transition: all .4s;
+    }
+
+    .card2:hover img {
+        margin-top: -30px;
+    }
+
+    .card2:hover {
+        width: 310px;
+        height: 360px;
+    }
+
+    .card2:before {
+        content: '\ Singaprura apartir de R$3899,00';
+        letter-spacing: 0.2em;
+        position: absolute;
+        bottom: 8px;
+        left: 30px;
+        color: #ff7800;
+        font-size: 16px;
+        font-weight: bolder;
+    }
+.card4 {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
+    background: white;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    position: relative;
+    transition: all .4s;
+}
+
+    .card4 img {
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+        cursor: pointer;
+        z-index: 10;
+        transition: all .4s;
+    }
+
+    .card4:hover img {
+        margin-top: -30px;
+    }
+
+    .card4:hover {
+        width: 310px;
+        height: 360px;
+    }
+
+    .card4:before {
+        content: '\ Cancún a partir de R$1.700,00';
+        letter-spacing: 0.2em;
+        position: absolute;
+        bottom: 8px;
+        left: 30px;
+        color: #ff7800;
+        font-size: 16px;
+        font-weight: bolder;
+    }
+.card5 {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
+    background: white;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    position: relative;
+    transition: all .4s;
+}
+
+    .card5 img {
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+        cursor: pointer;
+        z-index: 10;
+        transition: all .4s;
+    }
+
+    .card5:hover img {
+        margin-top: -30px;
+    }
+
+    .card5:hover {
+        width: 310px;
+        height: 360px;
+    }
+
+    .card5:before {
+        content: '\ Fortaleza a partir de R$799,00';
+        letter-spacing: 0.2em;
+        position: absolute;
+        bottom: 8px;
+        left: 30px;
+        color: #ff7800;
+        font-size: 16px;
+        font-weight: bolder;
+    }
+.card6 {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
+    background: white;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    position: relative;
+    transition: all .4s;
+}
+
+    .card6 img {
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+        cursor: pointer;
+        z-index: 10;
+        transition: all .4s;
+    }
+
+    .card6:hover img {
+        margin-top: -30px;
+    }
+
+    .card6:hover {
+        width: 310px;
+        height: 360px;
+    }
+
+    .card6:before {
+        content: '\ Rio de Janeiro a partir de R$699,00';
+        letter-spacing: 0.2em;
+        position: absolute;
+        bottom: 8px;
+        left: 30px;
+        color: #ff7800;
+        font-size: 16px;
+        font-weight: bolder;
+    }
+.card7 {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
+    background: white;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    position: relative;
+    transition: all .4s;
+}
+
+    .card7 img {
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+        cursor: pointer;
+        z-index: 10;
+        transition: all .4s;
+    }
+
+    .card7:hover img {
+        margin-top: -30px;
+    }
+
+    .card7:hover {
+        width: 310px;
+        height: 360px;
+    }
+
+    .card7:before {
+        content: '\ Curaçao a partir de R$1.299,00 ';
+        letter-spacing: 0.2em;
+        position: absolute;
+        bottom: 8px;
+        left: 30px;
+        color: #ff7800;
+        font-size: 16px;
+        font-weight: bolder;
+    }
+.card8 {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
+    background: white;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    position: relative;
+    transition: all .4s;
+}
+
+    .card8 img {
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+        cursor: pointer;
+        z-index: 10;
+        transition: all .4s;
+    }
+
+    .card8:hover img {
+        margin-top: -30px;
+    }
+
+    .card8:hover {
+        width: 310px;
+        height: 360px;
+    }
+
+    .card8:before {
+        content: '\ Chapada Diamantina a partir de R$499,00';
+        letter-spacing: 0.2em;
+        position: absolute;
+        bottom: 8px;
+        left: 30px;
+        color: #ff7800;
+        font-size: 16px;
+        font-weight: bolder;
+    }
+.card9 {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
+    background: white;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    position: relative;
+    transition: all .4s;
+}
+
+    .card9 img {
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+        cursor: pointer;
+        z-index: 10;
+        transition: all .4s;
+    }
+
+    .card9:hover img {
+        margin-top: -30px;
+    }
+
+    .card9:hover {
+        width: 310px;
+        height: 360px;
+    }
+
+    .card9:before {
+        content: '\ Grécia a partir de R$2.999,00';
+        letter-spacing: 0.2em;
+        position: absolute;
+        bottom: 8px;
+        left: 30px;
+        color: #ff7800;
+        font-size: 16px;
+        font-weight: bolder;
+    }
+.card3 {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
+    background: white;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    position: relative;
+    transition: all .4s;
+}
+
+    .card3 img {
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+        cursor: pointer;
+        z-index: 10;
+        transition: all .4s;
+    }
+
+    .card3:hover img {
+        margin-top: -30px;
+    }
+
+    .card3:hover {
+        width: 310px;
+        height: 360px;
+    }
+
+    .card3:before {
+        content: '\ Bariloche a partir de R$2.499,00';
+        letter-spacing: 0.2em;
+        position: absolute;
+        bottom: 8px;
+        left: 30px;
+        color: #ff7800;
+        font-size: 16px;
+        font-weight: bolder;
+    }
+/*carousel*/
+#carousel img {
+    width:100% !important;
+    height: 600px !important;
+}
+/*Contato*/
+.formulario {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../Imagem/saad-chaudhry-cYpqYxGeqts-unsplash.jpg');
+    
+}
+
+.white-bg {
+    background-color: rgba(255,255, 255,0.600) !important;
+    box-shadow: rgba(0,0,0,0.6) 10px inset;
+    backdrop-filter: blur(15px) !important;
+    -webkit-backdrop-filter: blur(15px) !important;
+    border-radius: 0px 5px 5px 5px !important;
+    padding: 10px 0px 10px 0px !important;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.border-warning, .border-bottom, .btn-send:hover {
+    transition: all 0.4s ease-in-out;
+}
+.btn-send{
+    cursor:pointer;
+}
+.btn-send:hover {
+    box-shadow: 5px 5px 14px 5px rgba(255,106,0,0.6);
+}
